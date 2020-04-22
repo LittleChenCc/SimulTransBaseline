@@ -108,7 +108,8 @@ def do_train(args):
             args.eos_idx, args.waitk)
 
         print('waitk=', args.waitk)
-
+        for name, p in transformer.named_parameters():
+            print(name, p.shape)
         # define loss
         criterion = CrossEntropyCriterion(args.label_smooth_eps)
 

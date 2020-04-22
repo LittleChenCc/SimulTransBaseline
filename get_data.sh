@@ -2,7 +2,7 @@
 
 set -e
 
-OUTPUT_DIR=$PWD/data
+OUTPUT_DIR=/scratch/chenjun2/dataset/WMT/data
 
 OUTPUT_DIR_DATA="${OUTPUT_DIR}/wmt18_zhen_data"
 ORIGIN_DIR_DATA="${OUTPUT_DIR_DATA}/corpus"
